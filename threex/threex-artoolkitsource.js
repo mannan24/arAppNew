@@ -374,7 +374,7 @@ ARjs.Source.prototype.copyElementSizeTo = function(otherElement){
 //		Code Separator
 //////////////////////////////////////////////////////////////////////////////
 
-ARjs.Source.prototype.copySizeTo = function(){
+ARjs.Source.prototype.copyElementSizeTo = function(){
 	console.warn('obsolete function arToolkitSource.copySizeTo. Use arToolkitSource.copyElementSizeTo' )
 	this.copyElementSizeTo.apply(this, arguments)
 }
@@ -383,7 +383,7 @@ ARjs.Source.prototype.copySizeTo = function(){
 //		Code Separator
 //////////////////////////////////////////////////////////////////////////////
 
-ARjs.Source.prototype.onResize	= function(arToolkitContext, renderer, camera){
+ARjs.Source.prototype.onResizeElement	= function(arToolkitContext, renderer, camera){
 	if( arguments.length !== 3 ){
 		console.warn('obsolete function arToolkitSource.onResize. Use arToolkitSource.onResizeElement' )
 		return this.onResizeElement.apply(this, arguments)
